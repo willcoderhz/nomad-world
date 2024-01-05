@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Sidebar from './components/SideBar';
 import JobBoard from './pages/JobBoard';
@@ -22,6 +22,7 @@ function App() {
       <Navbar />
       <Sidebar />
       <Routes>
+        <Route path="/" element={<Navigate replace to="/job-board" />} />
         <Route path="/job-board" element={<JobBoard />} />
         <Route path="/learning-zone" element={<LearningZone />} />
         <Route path="/web3-zone" element={<Web3Zone />} />
@@ -31,6 +32,7 @@ function App() {
         <Route path='/community-board' element={<CommunityBoard />} />
         <Route path='/discover' element={<DiscoveryZone />} />
         {/* 更多路由... */}
+        <Route path="*" element={<Navigate replace to="/job-board" />} />
       </Routes>
       <Footer/>
     </div>
