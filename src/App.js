@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Sidebar from './components/SideBar';
+import JobBoard from './pages/JobBoard';
+import LearningZone from './pages/LearningZone';
+import Web3Zone from './pages/Web3Zone';
+import PostJob from './pages/PostJob';
+import PostResume from './pages/PostResume';
+import PostTopic from './pages/PostTopic';
+import './App.css'
+import CommunityBoard from './pages/CommunityBoard';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+       <div>
+      <Navbar />
+      <Sidebar />
+      <Routes>
+        <Route path="/job-board" element={<JobBoard />} />
+        <Route path="/learning-zone" element={<LearningZone />} />
+        <Route path="/web3-zone" element={<Web3Zone />} />
+        <Route path="/postjob" element={<PostJob />} />
+        <Route path="/postresume" element={<PostResume />} />
+        <Route path='/posttopic' element={<PostTopic />} />
+        <Route path='/community-board' element={<CommunityBoard />} />
+        {/* 更多路由... */}
+      </Routes>
+      <Footer/>
     </div>
+  </Router>
   );
 }
 
