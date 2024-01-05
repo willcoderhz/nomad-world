@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nomad-world/static/css/main.73c10196.css",
+    "main.js": "/nomad-world/static/js/main.ebcb067f.js",
+    "static/js/787.1c97d1c6.chunk.js": "/nomad-world/static/js/787.1c97d1c6.chunk.js",
+    "index.html": "/nomad-world/index.html",
+    "main.73c10196.css.map": "/nomad-world/static/css/main.73c10196.css.map",
+    "main.ebcb067f.js.map": "/nomad-world/static/js/main.ebcb067f.js.map",
+    "787.1c97d1c6.chunk.js.map": "/nomad-world/static/js/787.1c97d1c6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73c10196.css",
+    "static/js/main.ebcb067f.js"
+  ]
+}
