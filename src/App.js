@@ -12,6 +12,7 @@ import PostTopic from './pages/PostTopic';
 import './App.css'
 import CommunityBoard from './pages/CommunityBoard';
 import Footer from './components/Footer';
+import DiscoveryZone from './pages/Discover';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/postresume" element={<PostResume />} />
         <Route path='/posttopic' element={<PostTopic />} />
         <Route path='/community-board' element={<CommunityBoard />} />
+        <Route path='/discover' element={<DiscoveryZone />} />
         {/* 更多路由... */}
       </Routes>
       <Footer/>

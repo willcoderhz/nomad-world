@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="h-75screen fixed right-0 top-24 right-8 w-46 bg-blue-300 shadow-lg rounded-xl">
+    <div className="h-75screen fixed right-0 top-24 right-8 w-46 bg-blue-400 shadow-lg rounded-xl">
       <div className="px-6 py-4">
       <div className="flex justify-center items-center">
       <div className="text-white text-lg font-semibold">菜单</div>

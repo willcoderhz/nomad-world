@@ -22,6 +22,7 @@ const Navbar = () => {
                 <Link to="/learning-zone" className="text-white hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">学习区</Link>
                 <Link to="/web3-zone" className="text-white hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Web3区</Link>
                 <Link to="/community-board" className="text-white hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">社群</Link>
+                <Link to="/discover" className="text-white hover:bg-blue-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium">发现</Link>
               </div>
             </div>
           </div>
